@@ -61,6 +61,7 @@
           <a href="#typography">Typography</a>
           <a href="#buttons">Buttons</a>
           <a href="#forms">Forms</a>
+          <a href="#switch">Switch</a>
           <a href="#tables">Tables</a>
           <a href="#cards">Cards</a>
           <a href="#alerts">Alerts</a>
@@ -240,11 +241,35 @@
           </fieldset>
         </div>
 
-        <h3>Field with Error</h3>
+        <h3>Field with error</h3>
         <div class="field" style="max-width: 400px;">
           <label for="error-input">Email</label>
           <input type="email" id="error-input" value="invalid-email" aria-invalid="true">
           <div class="error">Please enter a valid email address.</div>
+        </div>
+      </section>
+
+      <!-- Switch -->
+      <section id="switch" class="demo-section">
+        <h2>Switch</h2>
+
+        <div class="demo-row">
+          <label>
+            <input type="checkbox" role="switch"> Notifications
+          </label>
+          <label>
+            <input type="checkbox" role="switch" checked> Dark mode
+          </label>
+        </div>
+
+        <h3>Disabled</h3>
+        <div class="demo-row">
+          <label>
+            <input type="checkbox" role="switch" disabled> Disabled off
+          </label>
+          <label>
+            <input type="checkbox" role="switch" checked disabled> Disabled on
+          </label>
         </div>
       </section>
 

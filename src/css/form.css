@@ -132,6 +132,41 @@
     }
   }
 
+  input[type="checkbox"][role="switch"] {
+    --_switch-height: calc(var(--lm-bar-height) * 3);
+    --_switch-inset: 2px;
+    --_switch-thumb: calc(var(--_switch-height) - var(--_switch-inset) * 3);
+
+    width: calc(var(--_switch-height) * 2);
+    height: var(--_switch-height);
+    border-radius: var(--lm-radius-full);
+    background-color: var(--lm-input);
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: var(--_switch-inset);
+      transform: translateY(-50%);
+      width: var(--_switch-thumb);
+      height: var(--_switch-thumb);
+      background-color: var(--lm-background);
+      border-radius: var(--lm-radius-full);
+      transition: transform var(--lm-transition);
+      box-shadow: var(--lm-shadow-sm);
+    }
+
+    &:checked {
+      background-color: var(--lm-primary);
+      background-image: none;
+
+      &::before {
+        transform: translateY(-50%) translateX(calc(var(--_switch-height) * 1));
+      }
+    }
+  }
+
   input[type="range"] {
     width: 100%;
     height: var(--lm-bar-height);
