@@ -196,11 +196,24 @@
 }
 
 @layer components {
-  .input-group {
+  fieldset.group {
     display: flex;
     align-items: stretch;
+    border: none;
+    padding: 0;
+    margin: 0;
 
-    & > * {
+    & > input, & > select {
+      flex: 1;
+    }
+
+    & > button {
+      flex: none;
+    }
+
+    & > input,
+    & > select,
+    & > button {
       border-radius: 0;
 
       &:first-child {
@@ -214,34 +227,6 @@
       }
     }
 
-    & > input, & > select {
-      flex: 1;
-    }
-
-    & > span, & > .prefix, & > .suffix {
-      display: flex;
-      align-items: center;
-      padding: 0 var(--lm-space-3);
-      font-size: var(--lm-text-7);
-      color: var(--lm-muted-foreground);
-      background-color: var(--lm-muted);
-      border: 1px solid var(--lm-input);
-
-      &:first-child {
-        border-inline-end: none;
-      }
-
-      &:last-child {
-        border-inline-start: none;
-      }
-    }
-  }
-
-  fieldset.input-group {
-    border: none;
-    padding: 0;
-    margin: 0;
-
     & > legend {
       float: inline-start;
       padding: 0 var(--lm-space-3);
@@ -252,21 +237,31 @@
       background-color: var(--lm-muted);
       border: 1px solid var(--lm-input);
       border-inline-end: none;
-      border-radius: var(--lm-radius) 0 0 var(--lm-radius);
+      border-start-start-radius: var(--lm-radius);
+      border-end-start-radius: var(--lm-radius);
     }
 
-    & > input,
-    & > select,
-    & > button {
-      border-radius: 0 !important;
+    & > span, & > .prefix, & > .suffix {
+      display: flex;
+      align-items: center;
+      padding: 0 var(--lm-space-3);
+      font-size: var(--lm-text-7);
+      color: var(--lm-muted-foreground);
+      background-color: var(--lm-muted);
+      border: 1px solid var(--lm-input);
+      border-radius: 0;
+
+      &:first-child {
+        border-inline-end: none;
+        border-start-start-radius: var(--lm-radius);
+        border-end-start-radius: var(--lm-radius);
+      }
 
       &:last-child {
-        border-radius: 0 var(--lm-radius) var(--lm-radius) 0 !important;
+        border-inline-start: none;
+        border-start-end-radius: var(--lm-radius);
+        border-end-end-radius: var(--lm-radius);
       }
-    }
-
-    & > button {
-      flex: none;
     }
   }
 

@@ -1,5 +1,5 @@
 @layer components {
-  .sidebar {
+  aside.sidebar {
     position: fixed;
     top: 0;
     left: 0;
@@ -14,13 +14,13 @@
     flex-direction: column;
   }
 
-  .sidebar nav {
+  aside.sidebar nav {
     display: flex;
     flex-direction: column;
     gap: var(--lm-space-1);
   }
 
-  .sidebar a {
+  aside.sidebar a {
     display: flex;
     justify-content: flex-start;
     gap: var(--lm-space-2);
@@ -36,7 +36,7 @@
     }
   }
 
-  .sidebar :where(details) {
+  aside.sidebar :where(details) {
     border: none;
     overflow: visible;
 
@@ -64,7 +64,7 @@
     }
   }
 
-  .sidebar :where(summary) {
+  aside.sidebar :where(summary) {
     justify-content: flex-start;
     gap: var(--lm-space-2);
     padding: var(--lm-space-2) var(--lm-space-3);
@@ -80,22 +80,22 @@
     }
   }
 
-  .sidebar-content {
+  main {
     margin-left: 16rem;
   }
 
   @media (max-width: 768px) {
-    .sidebar {
+    aside.sidebar {
       transform: translateX(-100%);
       transition: transform var(--lm-transition);
       box-shadow: var(--lm-shadow-large);
     }
 
-    .sidebar[data-open] {
+    aside.sidebar[data-open] {
       transform: translateX(0);
     }
 
-    .sidebar-content {
+    main {
       margin-left: 0;
     }
   }

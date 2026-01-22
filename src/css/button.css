@@ -1,5 +1,5 @@
 @layer base {
-  button, [type="submit"], [type="reset"], [type="button"], .button {
+  button, [type="submit"], [type="reset"], [type="button"], a.button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -98,10 +98,11 @@
 }
 
 @layer components {
-  .btn-group {
+  menu.buttons {
+    padding-left: 0;
     display: inline-flex;
 
-    & > button, & > [type="button"], & > [type="submit"], & > [type="reset"], & > .button {
+    & > button, & > [type="button"], & > [type="submit"], & > [type="reset"], & > a.button {
       border-radius: 0;
 
       &:first-child {

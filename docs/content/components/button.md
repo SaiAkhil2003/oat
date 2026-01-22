@@ -26,19 +26,20 @@ Use `.small` or `.large` for size variants.
 <button class="small">Small</button>
 <button>Default</button>
 <button class="large">Large</button>
+<a href="" class="button">Hyperlink</a>
 ```
 {% end %}
 
 ### Button group
 
-Wrap buttons in `.btn-group` for connected buttons.
+Wrap buttons in `<menu class="buttons">` for connected buttons.
 
 {% demo() %}
 ```html
-<div class="btn-group">
+<menu class="buttons">
   <button class="outline">Left</button>
   <button class="outline">Center</button>
   <button class="outline">Right</button>
-</div>
+</menu>
 ```
 {% end %}

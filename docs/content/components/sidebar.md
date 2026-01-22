@@ -4,7 +4,7 @@ weight = 120
 description = "Fixed sidebar layout with collapsible sections using details/summary semantic tags."
 +++
 
-Use `.sidebar` on an `<aside>` and `.sidebar-content` on the main content area.
+Use `.sidebar` on an `<aside>` and `<main>` for the main content area.
 
 <div class="sidebar-example">
 {% demo() %}
@@ -24,10 +24,10 @@ Use `.sidebar` on an `<aside>` and `.sidebar-content` on the main content area.
     </details>
   </nav>
 </aside>
-<div class="sidebar-content" style="padding: var(--lm-space-4);">
+<main>
   <h3>Main Content</h3>
   <p>This area shifts to make room for the sidebar.</p>
-</div>
+</main>
 ```
 </div>
 

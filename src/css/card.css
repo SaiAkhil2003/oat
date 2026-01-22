@@ -1,5 +1,5 @@
 @layer components {
-  article, .card {
+  .card {
     background-color: var(--lm-card);
     color: var(--lm-card-foreground);
     border: 1px solid var(--lm-border);

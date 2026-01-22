@@ -62,11 +62,11 @@ Form elements are styled automatically. Wrap inputs in `<label>` for proper asso
 
 ### Input group
 
-Use `.input-group` on a `<fieldset>` to combine inputs with buttons or labels.
+Use `.group` on a `<fieldset>` to combine inputs with buttons or labels.
 
 {% demo() %}
 ```html
-<fieldset class="input-group">
+<fieldset class="group">
   <legend>https://</legend>
   <input type="url" placeholder="example.com">
   <button>Go</button>

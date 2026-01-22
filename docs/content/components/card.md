@@ -4,11 +4,11 @@ weight = 60
 description = "Card containers using the semantic <article> tag."
 +++
 
-Use `<article>` for cards. Optionally include `<header>` and `<footer>`.
+Use `class="card"` for cards. Optionally include `<header>` and `<footer>`.
 
 {% demo() %}
 ```html
-<article>
+<article class="card">
   <header>
     <h3>Card Title</h3>
     <p>Card description goes here.</p>
