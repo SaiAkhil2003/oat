@@ -21,7 +21,6 @@
       align-items: center;
       gap: var(--space-2);
       font-weight: var(--font-normal);
-      cursor: pointer;
     }
   }
 
@@ -85,7 +84,6 @@
     margin: 0;
     background-color: var(--background);
     border: 1px solid var(--input);
-    cursor: pointer;
     transition: background-color var(--transition-fast), border-color var(--transition-fast);
 
     &:checked {
@@ -155,7 +153,6 @@
     appearance: none;
     background: var(--muted);
     border-radius: var(--radius-full);
-    cursor: pointer;
 
     &::-webkit-slider-thumb {
       appearance: none;
@@ -163,7 +160,6 @@
       height: 1.25rem;
       background: var(--primary);
       border-radius: var(--radius-full);
-      cursor: pointer;
       transition: transform var(--transition-fast);
 
       &:hover {
@@ -177,7 +173,6 @@
       background: var(--primary);
       border: none;
       border-radius: var(--radius-full);
-      cursor: pointer;
     }
   }
 

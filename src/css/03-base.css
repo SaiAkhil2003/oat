@@ -148,6 +148,11 @@
     outline-offset: 2px;
   }
 
+  :is(input[type=checkbox], input[type=radio], input[type=range], select):not(:disabled),
+  label:has(input:is([type=checkbox], [type=radio]):not(:disabled)) {
+    cursor: pointer;
+  }
+
   :disabled {
     opacity: 0.5;
     cursor: not-allowed;
