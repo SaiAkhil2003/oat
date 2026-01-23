@@ -56,5 +56,5 @@ size: dist
 	@echo "JS (minified):  $$(wc -c < dist/longterm.min.js | tr -d ' ') bytes"
 	@echo ""
 	@echo "Gzipped:"
-	@gzip -c dist/longterm.min.css | wc -c | xargs -I {} echo "CSS (gzipped):  {} bytes"
-	@gzip -c dist/longterm.min.js | wc -c | xargs -I {} echo "JS (gzipped):   {} bytes"
+	@gzip -9 -c dist/longterm.min.css | wc -c | xargs -I {} echo "CSS (gzipped):  {} bytes"
+	@gzip -9 -c dist/longterm.min.js | wc -c | xargs -I {} echo "JS (gzipped):   {} bytes"

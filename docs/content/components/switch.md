@@ -12,7 +12,7 @@ Add `role="switch"` to a checkbox for toggle switch styling.
   <input type="checkbox" role="switch"> Notifications
 </label>
 <label>
-  <input type="checkbox" role="switch" checked> Dark mode
+  <input type="checkbox" role="switch" checked> Confabulation
 </label>
 ```
 {% end %}

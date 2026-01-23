@@ -3,12 +3,11 @@
     position: fixed;
     margin: 0;
     padding: var(--space-1);
-    list-style: none;
     min-width: 12rem;
     background-color: var(--background);
     border: 1px solid var(--border);
     border-radius: var(--radius-medium);
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    box-shadow: var(--shadow-medium);
     opacity: 0;
     transform: translateY(-4px);
     transition:
